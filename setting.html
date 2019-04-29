@@ -1,0 +1,68 @@
+#@layout()
+
+#define content()
+<div class="content-wrapper">
+
+    <section class="content-header">
+        <h1>
+            模板设置
+            <small>Template Setting</small>
+        </h1>
+    </section>
+
+    <section class="content">
+
+        <div class="row">
+            <form class="form-horizontal form-setting" autocomplete="off" id="optionForm">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                轮播(滚动)图片
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in ">
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-3 control-label">轮播图片1</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control jp-image-browser" for-src="waterimg"
+                                        for-input="slide1" id="slide1" name="slide1" value="#option('slide1')"
+                                        placeholder="点击选择图片">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname" class="col-sm-3 control-label">轮播图片2</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control jp-image-browser" for-src="waterimg"
+                                        for-input="slide2" id="slide2" name="slide2" value="#option('slide2')"
+                                        placeholder="点击选择图片">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname" class="col-sm-3 control-label">轮播图片3</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control jp-image-browser" for-src="waterimg"
+                                        for-input="slide3" id="slide3" name="slide3" value="#option('slide3')"
+                                        placeholder="点击选择图片">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-footer">
+                    <div class="col-sm-offset-2 col-sm-10 submit-block">
+                        <div class="box-submit">
+                            <button type="submit" class="btn btn-primary">提交</button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+</div>
+
+</section>
+
+</div>
+#end
